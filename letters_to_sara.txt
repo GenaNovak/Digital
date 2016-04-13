@@ -1,5 +1,55 @@
 
 
+
+
+
+
+
+
+מכתבים לשרה אהרנסון / אבשלום פיינברג
+
+
+#donate-banner {
+font-size: 130%;
+font-weight: bold;
+       position: static;
+       z-index: 6001;
+       top: 0;
+       left: 0;
+       right: 0;
+       background: #fde073;
+       text-align: center;
+       direction: rtl;
+       line-height: 2.5;
+       overflow: hidden; 
+       -webkit-box-shadow: 0 0 5px black;
+       -moz-box-shadow:    0 0 5px black;
+       box-shadow:         0 0 5px black;
+}
+ 
+
+
+ var _gaq = _gaq || [];
+ _gaq.push(['_setAccount', 'UA-4865013-1']);
+ _gaq.push(['_trackPageview']);
+
+ (function() {
+   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+ })();
+
+  
+ פרויקט 
+    בן-יהודה זקוק לעזרתכם. לחצו כאן לפרטים. 
+
+
+מכתבים לשרה אהרונסון
+
+אבשלום פיינברג
+
+לתוכן הענינים
+
 <![if !supportEmptyParas]> <![endif]>
 
 
