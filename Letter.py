@@ -7,8 +7,8 @@ class Letter:
 
 	def __init__(self, content, letterPath):
 		self.m_content = content
-		self.m_to = ""
-		self.m_from = ""
+		self.m_to = None
+		self.m_from = None
 		self.m_numberOfWords = None
 		self.m_letterPath = letterPath
 		self.m_numberOfWordsWithoutStopWords = None
@@ -46,31 +46,57 @@ class Letter:
 	def m_date(self, value):
 		self._m_date = value
 
+	@property
+	def m_to(self):
+		if self._m_to == None:
+			self._m_to = self.getToWhoTheLetterIs(self.m_content)
+		return self._m_to
 
+	@m_to.setter
+	def m_to(self, value):
+		self._m_to = value
 
+	@property
+	def m_from(self):
+		if self._m_from == None:
+			self._m_from = self.getFromWhoTheLetterIs(self.m_content)
+		return self._m_from
 
-	#return who write this letter
-	def getFromWhomTheLetterIs(self):
-		if self.m_from == "":
-			self.m_from = "Gena"
-		return self.m_from
+	@m_from.setter
+	def m_from(self, value):
+		self._m_from = value
 
-
-	#return to who the letter is
-	def getToWhomTheLetterIs(self):
-		if self.m_to == "":
-			self.m_to = "Reut"
-		return self.m_to
-
-	# not finnished
 	def getNumberOfWords(self, withStopWords):
 		prosessor = WordProsessor()
 		numberOfWords = prosessor.getNumberOfWords(self.m_letterPath, withStopWords)
 		return numberOfWords
 
 
+	#find to who the letter is. the algorithem assumes that the first word in the first line after the date contains the name.
+	def getToWhoTheLetterIs(self, str):
+		lines = str.splitlines()
+		index = 0
+		for line in lines:
+			if self.m_date.m_dateStr in line:
+				words = lines[index + 1].split()
+				return words[0]
+			index +=1
+
+	#find from who the letter is. the algorithem assumes that the last line with only one word contains the name
+	def getFromWhoTheLetterIs(self, str):
+		lines = str.splitlines()
+		index = -1
+		while index + len(lines) >= 0:
+			words = lines[index].split()
+			if len(words) == 1 and "\n" not in words[0]:
+				return words[0]
+			index -= 1
+		return ""
+
+
+
 w = WordProsessor()
 text = w.getText('letters//letters_to_sara.txt')
 l = Letter(text, 'letters//letters_to_sara.txt')
-print(l.m_date.m_dateStr)
-print(l.m_numberOfWordsWithoutStopWords)
+print
+print(l.m_from)

@@ -33,7 +33,7 @@ class Date:
 				if ((word in hDate) or  (hDate in word)):
 					try:
 						date = datetime.strptime(words[index + 1], "%Y").strftime("%Y")
-						return date + " " + word
+						return  word + " " + date
 					except ValueError:
 						print("",end="")
 			index = index + 1

@@ -265,9 +265,3 @@ class WordProsessor:
 			text = re.sub(",", " , ", text)
 			text = text.split()
 			return text
-'''
-w = WordProsessor()
-arr = w.separateTextBySpace('letters//letters_to_sara.txt')
-for word in arr:
-	print(word)
-'''
