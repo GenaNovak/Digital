@@ -38,12 +38,12 @@ class Letter:
 
 	@property
 	def m_date(self):
-		if self._mDate = None:
-			self._mDate = Date(self.m_content)
-		return self._mDate
+		if self._m_date == None:
+			self._m_date = Date(self.m_content)
+		return self._m_date
 
 	@m_date.setter
-	def m_date(self, value)
+	def m_date(self, value):
 		self._m_date = value
 
 
@@ -72,5 +72,5 @@ class Letter:
 w = WordProsessor()
 text = w.getText('letters//letters_to_sara.txt')
 l = Letter(text, 'letters//letters_to_sara.txt')
-print(l.m_numberOfWords)
+print(l.m_date.m_dateStr)
 print(l.m_numberOfWordsWithoutStopWords)
