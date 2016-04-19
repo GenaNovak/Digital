@@ -1,5 +1,3 @@
-name,age
-gena,26
-reut,27
-gena12,26
-reut1,27
+Date,To,From,Number of words,Number of words(with stop words)
+14.11.1911,ילדתי,קולע.,22185,28168
+22.12.1911,"שרתי,",צריף.,3908,4916

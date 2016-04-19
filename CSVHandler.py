@@ -8,26 +8,23 @@ class CSVHandler:
 		with open(self.m_fileName, 'w') as csvFile:
 			writer = csv.DictWriter(csvFile, fieldnames=fieldNamesArr)
 			writer.writeheader()
-		
+
 
 	#append the new row to the table
-	def writeLines(self, lines):
-		with open(self.m_fileName, 'a') as csvFile: 
+	def writeLines(self, letters):
+		with open(self.m_fileName, 'a') as csvFile:
 			writer = csv.DictWriter(csvFile, fieldnames=self.m_fieldNames)
-			for line in lines:
-				writer.writerow(line)
+			for letter in letters:
+				row = {"Date" : letter.m_date.m_dateStr, "To" : letter.m_to, "From" : letter.m_from, "Number of words" : letter.m_numberOfWords, "Number of words(with stop words)" : letter.m_numberOfWordsWithoutStopWords}
+				writer.writerow(row)
 
-				
-x = CSVHandler("test.csv", ["name", "age"])
-x.writeLines([{"name" : "gena", "age" : 26}, {"name" : "reut", "age" : 27}])
-x.writeLines([{"name" : "gena12", "age" : 26}, {"name" : "reut1", "age" : 27}])
-			
-		
+
+
 '''
 with open("test.csv", 'w') as csvFile:
 	fieldnames = ['first_name', 'last_name']
 	writer = csv.DictWriter(csvFile, fieldnames=fieldnames)
-	
+
 	writer.writeheader()
 	writer.writerow({'first_name': 'Baked', 'last_name': 'Beans'})
 	writer.writerow({'first_name': 'Lovely', 'last_name': 'Spam'})

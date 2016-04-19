@@ -2,6 +2,7 @@ import nltk
 import re
 from Date import Date
 from WordProsessor import WordProsessor
+from CSVHandler import CSVHandler
 
 class Letter:
 
@@ -92,3 +93,15 @@ class Letter:
 				return words[0]
 			index -= 1
 		return ""
+
+import glob
+
+
+
+letters = []
+prosessor = WordProsessor()
+for file in glob.glob("letters/*.txt"):
+	letters.append(Letter(prosessor.getText(file), file))
+
+x = CSVHandler("test.csv", ["Date", "To", "From",  "Number of words", "Number of words(with stop words)"])
+x.writeLines(letters)
