@@ -92,11 +92,3 @@ class Letter:
 				return words[0]
 			index -= 1
 		return ""
-
-
-
-w = WordProsessor()
-text = w.getText('letters//letters_to_sara.txt')
-l = Letter(text, 'letters//letters_to_sara.txt')
-print
-print(l.m_from)
