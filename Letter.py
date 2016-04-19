@@ -1,61 +1,76 @@
 import nltk
 import re
 from Date import Date
+from WordProsessor import WordProsessor
+
 class Letter:
 
 	def __init__(self, content, letterPath):
-		self.content = content
+		self.m_content = content
 		self.m_to = ""
 		self.m_from = ""
-		self.m_numberOfWords = -1
+		self.m_numberOfWords = None
 		self.m_letterPath = letterPath
-		self.m_numberOfWordsWithoutStopWords = -1
-		self.m_date = Date("test date 1.4.1990")
-	
-	
+		self.m_numberOfWordsWithoutStopWords = None
+		self.m_date = None
+
+
+
+	@property
+	def m_numberOfWords(self):
+		if self._m_numberOfWords == None:
+			self._m_numberOfWords = self.getNumberOfWords(True)
+		return self._m_numberOfWords
+
+	@m_numberOfWords.setter
+	def m_numberOfWords(self, value):
+		self._m_numberOfWords = value
+
+	@property
+	def m_numberOfWordsWithoutStopWords(self):
+		if self._m_numberOfWordsWithoutStopWords == None:
+			self._m_numberOfWordsWithoutStopWords = self.getNumberOfWords(False)
+		return self._m_numberOfWordsWithoutStopWords
+
+	@m_numberOfWordsWithoutStopWords.setter
+	def m_numberOfWordsWithoutStopWords(self, value):
+		self._m_numberOfWordsWithoutStopWords = value
+
+	@property
+	def m_date(self):
+		if self._mDate = None:
+			self._mDate = Date(self.m_content)
+		return self._mDate
+
+	@m_date.setter
+	def m_date(self, value)
+		self._m_date = value
+
+
+
+
 	#return who write this letter
 	def getFromWhomTheLetterIs(self):
 		if self.m_from == "":
 			self.m_from = "Gena"
 		return self.m_from
-			
-	
+
+
 	#return to who the letter is
 	def getToWhomTheLetterIs(self):
 		if self.m_to == "":
 			self.m_to = "Reut"
 		return self.m_to
-	
-	# not finnished		
+
+	# not finnished
 	def getNumberOfWords(self, withStopWords):
 		prosessor = WordProsessor()
-		if (withStopWords == True && self.m_numberOfWords == -1) || (withStopWords == False && m_numberOfWordsWithoutStopWords == -1):
-			numberOfWords = prosessor.getNumberOfWords(self.m_letterPath, withStopWords)
-		if withStopWords:
-			self.m_numberOfWords = numberOfWords
-		else:
-			self.m_numberOfWordsWithoutStopWords = numberOfWords
-		return 
-		
-			
-l = Letter("hey")
-print(l.getFromWhomTheLetterIs())
-print(l.getToWhomTheLetterIs())
-		
+		numberOfWords = prosessor.getNumberOfWords(self.m_letterPath, withStopWords)
+		return numberOfWords
 
 
-f = open('letters//letters_to_sara.txt',encoding='utf-8')
-letter = ""
-for line in f:
-	if "* * *" in line:
-		break
-	line = re.sub(r'<.*?>' ,'', line)
-	letter += line
-	
-tokens = nltk.word_tokenize(letter)
-punctuationMarks = ['.', ',', '?', '[', ']', '+', "-", '!', "'", ')', '(', "``", "''", '...']
-tokens = list(filter(lambda a : a not in punctuationMarks, tokens))
-print(tokens)
-print(letter)
-
-f.close()
+w = WordProsessor()
+text = w.getText('letters//letters_to_sara.txt')
+l = Letter(text, 'letters//letters_to_sara.txt')
+print(l.m_numberOfWords)
+print(l.m_numberOfWordsWithoutStopWords)

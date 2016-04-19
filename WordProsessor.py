@@ -224,14 +224,14 @@ class WordProsessor:
 								'אחרות',
 								'אשר',
 								'או']
-								
-	
-	
-	#return true if "word" is a stopword. false otherwise							
+
+
+
+	#return true if "word" is a stopword. false otherwise
 	def isStopWord(self, word):
 		return word in self.m_stopWords
-	
-	
+
+
 	#return number of word with or without stopwords
 	def getNumberOfWords(self, filePath, withStopWords):
 		with open(filePath ,encoding='utf-8') as file:
@@ -242,7 +242,32 @@ class WordProsessor:
 			if withStopWords:
 				tokens = list(filter(lambda a: a not in self.m_stopWords, tokens))
 			return len(tokens)
-			
+
+	#return a list of all words	in filePath
+	def getAllWords(self, filePath):
+		with open(filePath, encoding='utf-8') as file:
+			text = file.read()
+			text = re.sub(r'<.*?>' ,'', text)
+			tokens = nltk.word_tokenize(text)
+			return tokens
+
+	#return the text in filePath
+	def getText(self, filePath):
+		with open(filePath, encoding='utf-8') as file:
+			text = file.read()
+			text = re.sub(r'<.*?>' ,'', text)
+			return text
+
+	#return an array with words that was seperated by string
+	def separateTextBySpace(self, filePath):
+		with open(filePath, encoding='utf-8') as file:
+			text = file.read()
+			text = re.sub(",", " , ", text)
+			text = text.split()
+			return text
+'''
 w = WordProsessor()
-print(w.getNumberOfWords('letters//letters_to_sara.txt', False))		
-		
+arr = w.separateTextBySpace('letters//letters_to_sara.txt')
+for word in arr:
+	print(word)
+'''
