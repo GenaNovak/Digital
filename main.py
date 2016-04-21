@@ -13,7 +13,7 @@ def create_csv(dir_path):
     '''for file in glob.glob("out/*.txt"):
     	letters.append(Letter(prosessor.getText(file), file))
     '''
-    for root, dirnames, filenames in os.walk(dir_path):
+    for root, dirnames, filenames in os.walk('./out'):
         for filename in fnmatch.filter(filenames, '*.txt'):
             file = os.path.abspath(os.path.join(root, filename))
             letters.append(Letter(prosessor.getText(file),file))
@@ -21,10 +21,19 @@ def create_csv(dir_path):
     x = CSVHandler("test.csv", ["Date", "To", "From",  "Number of words", "Number of words(with stop words)"])
     x.writeLines(letters)
 
+
+def main():
+    input_dir_path = "input"
+    output_dir_path = "out"
+    Parser.splite_to_letters(input_dir_path, output_dir_path)
+    create_csv(output_dir_path)
+'''
 def main():
 	input_dir_path  = 'input'
 	output_dir_path = 'out'
 	Parser.splite_to_letters(input_dir_path, output_dir_path)
+print("")
 	create_csv(output_dir_path);
 
+'''
 main()

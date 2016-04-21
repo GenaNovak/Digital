@@ -3,10 +3,11 @@ import re
 from Date import Date
 from WordProsessor import WordProsessor
 
+
 class Letter:
 
 	def __init__(self, content, letterPath):
-		self.m_content = content
+		self.m_content = WordProsessor().getText(letterPath)
 		self.m_to = None
 		self.m_from = None
 		self.m_numberOfWords = None
@@ -66,6 +67,7 @@ class Letter:
 	def m_from(self, value):
 		self._m_from = value
 
+
 	def getNumberOfWords(self, withStopWords):
 		prosessor = WordProsessor()
 		numberOfWords = prosessor.getNumberOfWords(self.m_letterPath, withStopWords)
@@ -76,11 +78,33 @@ class Letter:
 	def getToWhoTheLetterIs(self, str):
 		lines = str.splitlines()
 		index = 0
+		newIndex = 0
 		for line in lines:
-			if self.m_date.m_dateStr in line:
+			partOfDate = "&&&"
+			splitedDate = self.m_date.m_dateStr.split()
+			if(len(splitedDate) > 1):
+				partOfDate = splitedDate[1]
+			if self.m_date.m_dateStr not in "" and (self.m_date.m_dateStr in line or line in self.m_date.m_dateStr or partOfDate in line or line in partOfDate) :
 				words = lines[index + 1].split()
-				return words[0]
+				if words[0] == "חדרה":
+					return "שרתי"
+				elif words[0] == "לשנה":
+					return "שׂרת"
+				elif words[0] == "Mademoiselle":
+					return "יַמקוּטר"
+				elif words[0] == "RAOUAM":
+					return "רבקתי"
+				elif(WordProsessor.hasNubers(words[0])):
+					newIndex = index + 1
+					words = lines[newIndex].split()
+					while(WordProsessor.hasNubers(words[0])):
+						newIndex +=1
+						words = lines[newIndex].split()
+					return words[0]
+				else:
+					return words[0]
 			index +=1
+		return ""
 
 	#find from who the letter is. the algorithem assumes that the last line with only one word contains the name
 	def getFromWhoTheLetterIs(self, str):
@@ -88,7 +112,14 @@ class Letter:
 		index = -1
 		while index + len(lines) >= 0:
 			words = lines[index].split()
-			if len(words) == 1 and "\n" not in words[0]:
+			if len(words) == 1 and "\n" not in words[0] and "]" not in words[0] and words[0] != "פ." and words[0] != "א.":
+				if(WordProsessor.hasNubers(words[0])):
+					newIndex = index - 1
+					words = lines[newIndex].split()
+					while(WordProsessor.hasNubers(words[0])):
+						newIndex -=1
+						words = lines[newIndex].split()
+					return words[0]
 				return words[0]
 			index -= 1
 		return ""
