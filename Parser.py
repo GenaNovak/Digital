@@ -11,15 +11,17 @@ class Parser:
         def clean_letter_text(text):
                 #add delimiter to split into letters
                 text = text.replace('1917','\n * * * \n 1917')
-                sidx = text.find("<!")
-                eidx = text.find("הערת העורך")
+                boarder_str = 'לתוכן הענינים'
+                sidx = text.find(boarder_str)
+                sidx_plus = text.find(boarder_str) + len(boarder_str)
+                eidx = text.find(boarder_str,sidx_plus)
                 if (sidx == -1):
                         print("could not trim start")
-                        sidx = 0
-                if (sidx == -1):
+                        sidx_plus = 0
+                if (eidx == -1):
                         print("could not trim end")
                         eidx = len(text)       
-                return text[sidx:(eidx-1)]
+                return text[sidx_plus:(eidx-1)]
                 
         def splite_to_letters(in_dir_path, out_dir_path):
                 
@@ -53,6 +55,3 @@ class Parser:
                                        out_file.write(letter.encode())
                                 count = count+1
                                 print("write to {0}".format(fname))
-
-	
-	
