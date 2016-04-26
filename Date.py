@@ -41,7 +41,7 @@ class Date:
 					try:
 						date = datetime.strptime(words[index + 1], "%Y").strftime("%Y")
 						if(index > 0):
-							if(WordProsessor.hasNubers(words[index - 1])):
+							if(WordProsessor.hasNumbers(words[index - 1])):
 								return  words[index - 1] + " " + word + " " + words[index + 1]
 						return  word + " " + words[index + 1]
 					except ValueError:

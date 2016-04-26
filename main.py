@@ -25,7 +25,7 @@ def create_csv(dir_path):
 def main():
     input_dir_path = "input"
     output_dir_path = "out"
-    Parser.splite_to_letters(input_dir_path, output_dir_path)
+    #Parser.splite_to_letters(input_dir_path, output_dir_path)
     create_csv(output_dir_path)
 '''
 def main():

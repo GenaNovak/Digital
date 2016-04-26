@@ -76,9 +76,10 @@ class Letter:
 
 	#find to who the letter is. the algorithem assumes that the first word in the first line after the date contains the name.
 	def getToWhoTheLetterIs(self, str):
-		lines = str.splitlines()
+		lines = self.m_content.splitlines()
 		index = 0
 		newIndex = 0
+		numberOfLines = len(lines)
 		for line in lines:
 			partOfDate = "&&&"
 			splitedDate = self.m_date.m_dateStr.split()
@@ -86,39 +87,32 @@ class Letter:
 				partOfDate = splitedDate[1]
 			if self.m_date.m_dateStr not in "" and (self.m_date.m_dateStr in line or line in self.m_date.m_dateStr or partOfDate in line or line in partOfDate) :
 				words = lines[index + 1].split()
-				if words[0] == "חדרה":
-					return "שרתי"
-				elif words[0] == "לשנה":
-					return "שׂרת"
-				elif words[0] == "Mademoiselle":
-					return "יַמקוּטר"
-				elif words[0] == "RAOUAM":
-					return "רבקתי"
-				elif(WordProsessor.hasNubers(words[0])):
-					newIndex = index + 1
-					words = lines[newIndex].split()
-					while(WordProsessor.hasNubers(words[0])):
-						newIndex +=1
-						words = lines[newIndex].split()
-					return words[0]
-				else:
-					return words[0]
+				for name in WordProsessor().m_namesRivka:
+					if (numberOfLines > index + 1 and name in lines[index + 1]) or (numberOfLines > index + 2 and name in lines[index + 2]) or (numberOfLines > index + 3 and name in lines[index + 3]):
+						return "רבקה"
+				for name in WordProsessor().m_namesSara:
+					if (numberOfLines > index + 1 and name in lines[index + 1]) or (numberOfLines > index + 2 and name in lines[index + 2]) or (numberOfLines > index + 3 and name in lines[index + 3]):
+						return "שרה"
+				if line in "3 juillet 1911":
+					return "רבקה"
 			index +=1
 		return ""
 
 	#find from who the letter is. the algorithem assumes that the last line with only one word contains the name
 	def getFromWhoTheLetterIs(self, str):
-		lines = str.splitlines()
+		prosessor = WordProsessor()
+		lines = self.m_content.splitlines()
 		index = -1
 		while index + len(lines) >= 0:
 			words = lines[index].split()
-			if len(words) == 1 and "\n" not in words[0] and "]" not in words[0] and words[0] != "פ." and words[0] != "א.":
-				if(WordProsessor.hasNubers(words[0])):
+			if len(words) == 1 and "\n" not in words[0] and "]" not in words[0] and words[0] != "פ." and words[0] != "א." and prosessor.hasPunctuationMarks(words[0]) == False and words[0] in prosessor.m_knownNamesFrom:
+				if(WordProsessor.hasNumbers(words[0])):
 					newIndex = index - 1
 					words = lines[newIndex].split()
-					while(WordProsessor.hasNubers(words[0])):
+					while(WordProsessor.hasNumbers(words[0])):
 						newIndex -=1
 						words = lines[newIndex].split()
+
 					return words[0]
 				return words[0]
 			index -= 1

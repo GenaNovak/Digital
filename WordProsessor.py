@@ -5,6 +5,9 @@ import os
 class WordProsessor:
 	def __init__(self):
 		self.m_punctuationMarks = ['.', ',', '?', '[', ']', '+', "-", '!', "'", ')', '(', "``", "''", '...']
+		self.m_namesRivka = ["רבק"]
+		self.m_namesSara = ["שרה", "שרת", "שׂרת"]
+		self.m_knownNamesFrom = ["סַלים", "אבשלום", "סַלִים", " אבשלום."]
 		self.m_stopWords = ['אני','את',
 								'אתה',
 								'אנחנו',
@@ -257,7 +260,7 @@ class WordProsessor:
 		with open(filePath, encoding='utf-8') as file:
 			text = file.read()
 			text = re.sub(r'<.*?>' ,'', text)
-			text = re.sub(r'[[0-9].*?]', '', text)
+			text = re.sub(r'\[[0-9].*?\]', '', text)
 			text = re.sub(",", " , ", text)
 			text = re.sub("-", " - ",text)
 			text = self.removeEmptyLine(text)
@@ -283,5 +286,11 @@ class WordProsessor:
 				newlines.append(line)
 		return "\n".join(newlines)
 
-	def hasNubers(inputString):
+	def hasNumbers(inputString):
 		return any(char.isdigit() for char in inputString)
+
+	def hasPunctuationMarks(self, inputString):
+		for mark in self.m_punctuationMarks:
+			if mark in inputString:
+				return True
+		return False
