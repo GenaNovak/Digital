@@ -66,23 +66,29 @@ class Parser:
 
         def splite_in_letter(out_dir_path, text, val, lcount, pcount):    
                 #val = inletter_seperat.get(lcount)
-                repl = '\n * * * \n {0}'.format(val)
-                text = re.sub(val, repl, text)
+                if (isinstance(val, str)):
+                        repl = '\n * * * \n {0}'.format(val)
+                        text = re.sub(val, repl, text)
+                else:
+                        for v in val:
+                                repl = '\n * * * \n {0}'.format(v)
+                                text = re.sub(v, repl, text)
                 letters = text.split('* * *')
+                print("split letter {0} into {1}".format(lcount, len(letters)))
                 for letter in letters:
                         pcount = Parser.write_letter(out_dir_path,letter,pcount)
                 return pcount
 
         def splite_to_letters(in_dir_path, out_dir_path):
                 inletter_seperat={
-                        5  : '<![if !supportEmptyParas]> <![endif]>',
+                        5  : ['שלום רב לגבירות','שלום לכן יקירותי','לכבוד העלמות הנכבדות'],
                         32 : 'P.A.',                     #rivka 1912 --> letter 2
                         36 : 'רבקה!',                    #rivka 1912 --> letter 6
-                        #61 : ['הנייר היפה','המכתב נשאר'], #rivka 1913 --> letter 6
+                        61 : ['הנייר היפה','המכתב נשאר'], #rivka 1913 --> letter 6
                         63 : 'האם',                      #rivka 1913 --> letter 8
                         64 : 'P.S.',                     #rivka 1913 --> letter 9
                         66 : "שרה'לה נשמתי,",           #rivka 1914 --> letter 1
-                        73 : 'לשה שלום'                #rivka 1914 --> letter 8
+                        73 : 'לשרה שלום'                #rivka 1914 --> letter 8
                         }
                 if (not (os.path.exists(in_dir_path))):
                         print('Input folder doesn''t exist')
