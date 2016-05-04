@@ -15,7 +15,7 @@ class CSVHandler:
 		with open(self.m_fileName, 'a') as csvFile:
 			writer = csv.DictWriter(csvFile, fieldnames=self.m_fieldNames)
 			for letter in letters:
-				row = {"Date" : letter.m_date.m_dateStr, "To" : letter.m_to, "From" : letter.m_from, "Number of words" : letter.m_numberOfWords, "Number of words(with stop words)" : letter.m_numberOfWordsWithoutStopWords}
+				row = {"Date" : letter.m_date.m_dateStr, "To" : letter.m_to, "From" : letter.m_from, "Number of words" : letter.m_numberOfWords, "Number of words(with stop words)" : letter.m_numberOfWordsWithoutStopWords, "Path" : letter.m_letterPath}
 				writer.writerow(row)
 
 
