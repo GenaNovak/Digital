@@ -7,6 +7,8 @@ class WordProsessor:
 		self.m_punctuationMarks = ['.', ',', '?', '[', ']', '+', "-", '!', "'", ')', '(', "``", "''", '...']
 		self.m_namesRivka = ["רבק"]
 		self.m_namesSara = ["שרה", "שרת", "שׂרת"]
+		self.m_specialCities = ["בין יפו וחדרה"]
+		self.m_cities = ["חדרה", "יפו", "GRAND HOTEL D'ORIENT", "חיפה", "זכרון-יעקב", "דמשק", "עתלית", "קאקוּן", "קאקוּן", "אלכסנדריה"]
 		self.m_knownNamesFrom = ["סַלים", "אבשלום", "סַלִים", " אבשלום."]
 		self.m_stopWords = ['אני','את',
 								'אתה',

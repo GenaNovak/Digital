@@ -14,8 +14,19 @@ class Letter:
 		self.m_letterPath = letterPath
 		self.m_numberOfWordsWithoutStopWords = None
 		self.m_date = None
+		self.m_location = None
 
 
+
+	@property
+	def m_location(self):
+		if self._m_location == None:
+			self._m_location = self.getLocation()
+		return self._m_location
+
+	@m_location.setter
+	def m_location(self, value):
+		self._m_location = value
 
 	@property
 	def m_numberOfWords(self):
@@ -67,6 +78,15 @@ class Letter:
 	def m_from(self, value):
 		self._m_from = value
 
+	def getLocation(self):
+		prosessor = WordProsessor()
+		for city in prosessor.m_specialCities:
+			if city in self.m_content:
+				return city
+		for city in prosessor.m_cities:
+			if city in self.m_content:
+				return city
+		return ""
 
 	def getNumberOfWords(self, withStopWords):
 		prosessor = WordProsessor()
