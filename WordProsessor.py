@@ -261,11 +261,6 @@ class WordProsessor:
 	def getText(self, filePath):
 		with open(filePath, encoding='utf-8') as file:
 			text = file.read()
-			text = re.sub(r'<.*?>' ,'', text)
-			text = re.sub(r'\[[0-9].*?\]', '', text)
-			text = re.sub(",", " , ", text)
-			text = re.sub("-", " - ",text)
-			text = self.removeEmptyLine(text)
 			return text
 
 	#return an array with words that was seperated by string
@@ -278,15 +273,6 @@ class WordProsessor:
 			text = re.sub(".\n", " .\n", text)
 			text = text.split()
 			return text
-
-	def removeEmptyLine(self, text):
-		newlines = []
-		lines = text.splitlines()
-		for line in lines:
-			line = line.strip()
-			if line not in "":
-				newlines.append(line)
-		return "\n".join(newlines)
 
 	def hasNumbers(inputString):
 		return any(char.isdigit() for char in inputString)

@@ -10,7 +10,7 @@ class Parser:
                         61 : ['הנייר היפה','המכתב נשאר'], #rivka 1913 --> letter 6
                         63 : 'האם',                      #rivka 1913 --> letter 8
                         64 : 'P.S.',                     #rivka 1913 --> letter 9
-                        66 : "שרה'לה נשמתי,",           #rivka 1914 --> letter 1
+                        66 : "שרה'לה נשמתי",           #rivka 1914 --> letter 1
                         73 : 'לשרה שלום'                #rivka 1914 --> letter 8
                         }
 
@@ -20,11 +20,22 @@ class Parser:
                 abs_file_path = os.path.join(script_dir, rel_path)
                 return abs_file_path
 
+
+        def removeEmptyLine(self, text):
+                newlines = []
+                lines = text.splitlines()
+                for line in lines:
+                        line = line.strip()
+                        if line not in "":
+                                newlines.append(line)
+                return "\n".join(newlines)
+
         def cleanLetterText(self, text):
-                #add delimiter to split into letters
+                #remove specific pattern so it will be convinant to split
                 uniform_regex = '(<!\[if !supportEmptyParas\]>[\s]*<!\[endif\]>[\s\n\r\t]*)*\* \* \*[\s\n]*(<!\[if !supportEmptyParas\]>[\s]*<!\[endif\]>[\s\n\r\t]*)*'
                 text = re.sub(uniform_regex,'\n * * * \n',text);
 
+                #add delimiter to split into letters
                 pattern_beforeyear = '<!\[if !supportEmptyParas\]>[\s]*<!\[endif\]>[\s\n\r\t]*';
                 sperat_years = ['1912', '1913', '1914', '1915', '1917']
                 for year in sperat_years:
@@ -43,6 +54,13 @@ class Parser:
                         print("could not trim end")
                         eidx = len(text)
 
+                # clean special marks
+                text = re.sub(r'<.*?>' ,'', text)
+                text = re.sub(r'\[[0-9].*?\]', '', text)
+                text = re.sub(",", " , ", text)
+                text = re.sub("-", " - ",text)
+                text = self.removeEmptyLine(text)
+                
                 return text[sidx_plus:(eidx-1)]
 
         def writeLetter(self, path, letter, count):
@@ -66,7 +84,7 @@ class Parser:
                         pcount = self.writeLetter(out_dir_path,letter,pcount)
                 return pcount
 
-        def spliteToLetters(self, in_dir_path, out_dir_path):
+        def parseFolder(self, in_dir_path, out_dir_path):
             
                 if (not (os.path.exists(in_dir_path))):
                         print('Input folder doesn''t exist')
@@ -83,10 +101,16 @@ class Parser:
                         
                         out_path = os.path.join(out_dir_path, os.path.splitext(file)[0])
                         out_abs_path = self.getAbsPath(out_path)
-                        print(os.path.basename(out_abs_path))
-
                         #create out dir if it doesn't exist
                         os.makedirs(out_abs_path, exist_ok=True)
+
+                        # ------ Parse with tagger -----------
+
+
+
+                        # ------ Split into letters ----------
+                        
+                        print(os.path.basename(out_abs_path))
                         all_letters = all_text.split('* * *')
                         letter_count = 1;
                         print_count = 1;
