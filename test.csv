@@ -1,107 +1,107 @@
-Date,To,From,Location,Number of words,Number of words(with stop words),Path
-,רבקה,,יפו,339,412,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_1.txt
-11 יוני 1911,רבקה,אבשלום,חדרה,71,84,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_10.txt
-17 יוני 1911,רבקה,אבשלום,חדרה,714,895,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_11.txt
-19 יוני 1911,רבקה,אבשלום,חדרה,75,98,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_12.txt
-22 יוני 1911,רבקה,אבשלום,חדרה,113,139,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_13.txt
-3 juillet 1911,רבקה,אבשלום,יפו,267,334,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_14.txt
-28 יולי 1911,רבקה,אבשלום,חדרה,137,167,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_15.txt
-12.10.11,רבקה,אבשלום,יפו,43,52,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_16.txt
-14.10.11,רבקה,אבשלום,יפו,318,417,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_17.txt
-17 אוקטובר 1911,רבקה,אבשלום,חדרה,1019,1291,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_18.txt
+Date,adressee,From,Location,Number of words,Number of words(with stop words),filename
+,רבקה,,יפו,339,409,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_1.txt
+11 יוני 1911,רבקה,אבשלום,חדרה,72,85,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_10.txt
+17 יוני 1911,רבקה,אבשלום,חדרה,722,908,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_11.txt
+19 יוני 1911,רבקה,אבשלום,חדרה,76,99,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_12.txt
+22 יוני 1911,רבקה,אבשלום,חדרה,111,142,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_13.txt
+3 juillet 1911,רבקה,אבשלום,יפו,267,337,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_14.txt
+28 יולי 1911,רבקה,אבשלום,חדרה,138,169,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_15.txt
+12.10.11,רבקה,אבשלום,יפו,44,53,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_16.txt
+14.10.11,רבקה,אבשלום,יפו,315,421,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_17.txt
+17 אוקטובר 1911,רבקה,אבשלום,חדרה,1027,1322,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_18.txt
 18.10.11,רבקה,אבשלום,,26,34,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_19.txt
-1 למרץ 1911,רבקה,אבשלום,חדרה,1070,1331,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_2.txt
-22 אוקטובר 1911,רבקה,אבשלום,חדרה,542,729,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_20.txt
-23.10.11,רבקה,אבשלום,יפו,195,240,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_21.txt
-1 לנובמבר 1911,רבקה,אבשלום,חדרה,202,279,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_22.txt
-10 November 2011,רבקה,אבשלום,חדרה,370,470,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_23.txt
-1911 November 4.11,רבקה,אבשלום,,121,155,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_24.txt
-13.11.11,רבקה,אבשלום,חדרה,220,272,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_25.txt
-14.11.1911,רבקה,אבשלום,חדרה,188,255,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_26.txt
-3.12.1911,רבקה,אבשלום,חדרה,101,131,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_27.txt
-12.12.1911,רבקה,אבשלום,,62,80,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_28.txt
-14.12.1911,רבקה,אבשלום,חדרה,644,888,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_29.txt
-29 מרץ 1911,רבקה,אבשלום,חדרה,417,531,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_3.txt
-20.12.1911,רבקה,אבשלום,,32,35,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_30.txt
-21.12.1911,רבקה,אבשלום,חדרה,153,185,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_31.txt
-22.12.1911,רבקה,אבשלום,חדרה,518,654,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_32.txt
-24.12.1911,רבקה,אבשלום,יפו,384,501,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_33.txt
-6 ינואר 1912,רבקה,אבשלום,חדרה,687,913,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_34.txt
-13.1.1912,רבקה,אבשלום,,385,484,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_35.txt
-,רבקה,אבשלום,,36,48,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_36.txt
-15.1.1912,רבקה,אבשלום,חדרה,613,800,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_37.txt
-19.1.1912,רבקה,אבשלום,חדרה,552,672,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_38.txt
-22.1.1912,רבקה,,חדרה,100,132,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_39.txt
+1 למרץ 1911,רבקה,אבשלום,חדרה,1091,1368,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_2.txt
+22 אוקטובר 1911,רבקה,אבשלום,חדרה,549,740,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_20.txt
+23.10.11,רבקה,אבשלום,יפו,198,245,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_21.txt
+1 לנובמבר 1911,רבקה,אבשלום,חדרה,201,278,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_22.txt
+10 November 2011,רבקה,אבשלום,חדרה,372,474,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_23.txt
+1911 November 4.11,רבקה,אבשלום,,121,161,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_24.txt
+13.11.11,רבקה,אבשלום,חדרה,217,273,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_25.txt
+14.11.1911,רבקה,אבשלום,חדרה,189,261,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_26.txt
+3.12.1911,רבקה,אבשלום,חדרה,101,137,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_27.txt
+12.12.1911,רבקה,אבשלום,,61,81,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_28.txt
+14.12.1911,רבקה,אבשלום,חדרה,650,900,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_29.txt
+29 מרץ 1911,רבקה,אבשלום,חדרה,424,543,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_3.txt
+20.12.1911,רבקה,אבשלום,,34,37,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_30.txt
+21.12.1911,רבקה,אבשלום,חדרה,153,188,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_31.txt
+22.12.1911,רבקה,אבשלום,חדרה,534,675,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_32.txt
+24.12.1911,רבקה,אבשלום,יפו,387,513,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_33.txt
+6 ינואר 1912,רבקה,אבשלום,חדרה,690,927,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_34.txt
+13.1.1912,רבקה,אבשלום,,389,493,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_35.txt
+,רבקה,אבשלום,,35,47,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_36.txt
+15.1.1912,רבקה,אבשלום,חדרה,625,817,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_37.txt
+19.1.1912,רבקה,אבשלום,חדרה,560,685,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_38.txt
+22.1.1912,רבקה,,חדרה,102,135,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_39.txt
 30.3.11,שרה,אבשלום,,19,23,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_4.txt
-5.2.1912,רבקה,אבשלום,חדרה,219,277,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_40.txt
+5.2.1912,רבקה,אבשלום,חדרה,219,278,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_40.txt
 ,רבקה,,,16,23,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_41.txt
-9.3.1912,רבקה,אבשלום,חדרה,44,53,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_42.txt
-14.3.1912,רבקה,אבשלום,יפו,188,238,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_43.txt
-16.3.1912,רבקה,אבשלום,,115,162,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_44.txt
-20.3.1912,רבקה,אבשלום,חדרה,326,418,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_45.txt
-14.4.1912,רבקה,אבשלום,,47,52,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_46.txt
-14.5.1912,רבקה,אבשלום,חדרה,86,105,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_47.txt
-30.5.1912,שרה,אבשלום,יפו,76,98,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_48.txt
-9 ליוני 1912,רבקה,אבשלום,חדרה,110,150,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_49.txt
-1 ליוני 1911,רבקה,אבשלום,,59,78,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_5.txt
-16.6.12,רבקה,אבשלום,,15,17,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_50.txt
-9.7.1912,רבקה,אבשלום,יפו,108,142,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_51.txt
-27.7.12,רבקה,אבשלום,חדרה,127,156,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_52.txt
-1 אוגוסט 1912,רבקה,אבשלום,,54,70,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_53.txt
-29.8.1912,רבקה,אבשלום,חדרה,158,210,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_54.txt
-29.8.1912,רבקה,סַלִים,חדרה,68,81,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_55.txt
-27.9.1912,רבקה,אבשלום,חדרה,128,171,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_56.txt
-27.9.1912,רבקה,אבשלום,יפו,171,232,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_57.txt
-8.10.1912,רבקה,אבשלום,יפו,164,202,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_58.txt
-2.11.1912,רבקה,אבשלום,יפו,75,107,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_59.txt
-,רבקה,,יפו,36,46,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_6.txt
-10.12.12,רבקה,אבשלום,,89,114,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_60.txt
+9.3.1912,רבקה,אבשלום,חדרה,43,52,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_42.txt
+14.3.1912,רבקה,אבשלום,יפו,189,242,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_43.txt
+16.3.1912,רבקה,אבשלום,,118,167,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_44.txt
+20.3.1912,רבקה,אבשלום,חדרה,325,419,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_45.txt
+14.4.1912,רבקה,אבשלום,,46,51,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_46.txt
+14.5.1912,רבקה,אבשלום,חדרה,83,104,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_47.txt
+30.5.1912,שרה,אבשלום,יפו,78,101,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_48.txt
+9 ליוני 1912,רבקה,אבשלום,חדרה,113,154,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_49.txt
+1 ליוני 1911,רבקה,אבשלום,,63,82,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_5.txt
+16.6.12,רבקה,אבשלום,,14,16,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_50.txt
+9.7.1912,רבקה,אבשלום,יפו,109,146,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_51.txt
+27.7.12,רבקה,אבשלום,חדרה,127,157,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_52.txt
+1 אוגוסט 1912,רבקה,אבשלום,,55,71,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_53.txt
+29.8.1912,רבקה,אבשלום,חדרה,156,210,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_54.txt
+29.8.1912,רבקה,סַלִים,חדרה,70,84,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_55.txt
+27.9.1912,רבקה,אבשלום,חדרה,129,172,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_56.txt
+27.9.1912,רבקה,אבשלום,יפו,178,240,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_57.txt
+8.10.1912,רבקה,אבשלום,יפו,167,209,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_58.txt
+2.11.1912,רבקה,אבשלום,יפו,76,111,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_59.txt
+,רבקה,,יפו,35,48,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_6.txt
+10.12.12,רבקה,אבשלום,,92,117,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_60.txt
 1 Janvier 1913,רבקה,,,52,63,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_61.txt
-24.5.1913,רבקה,אבשלום,,68,82,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_62.txt
-7.6.1913,רבקה,אבשלום,חדרה,64,80,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_63.txt
-,רבקה,,יפו,1697,2200,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_64.txt
-20.7.1913,רבקה,אבשלום,יפו,168,210,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_65.txt
-8.9.1913,רבקה,אבשלום,יפו,80,89,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_66.txt
-,רבקה,,,18,23,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_67.txt
+24.5.1913,רבקה,אבשלום,,69,83,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_62.txt
+7.6.1913,רבקה,אבשלום,חדרה,65,81,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_63.txt
+,רבקה,,יפו,1728,2254,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_64.txt
+20.7.1913,רבקה,אבשלום,יפו,175,218,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_65.txt
+8.9.1913,רבקה,אבשלום,יפו,82,92,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_66.txt
+,רבקה,,,19,24,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_67.txt
 ,רבקה,אבשלום,,11,13,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_68.txt
-,רבקה,אבשלום,,116,151,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_69.txt
-,רבקה,,חדרה,25,36,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_7.txt
-3.10.1913,רבקה,אבשלום,,115,147,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_70.txt
-,רבקה,אבשלום,,21,27,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_71.txt
-,רבקה,אבשלום,,82,96,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_72.txt
+,רבקה,אבשלום,,119,154,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_69.txt
+,רבקה,,חדרה,26,37,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_7.txt
+3.10.1913,רבקה,אבשלום,,121,154,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_70.txt
+,רבקה,אבשלום,,23,29,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_71.txt
+,רבקה,אבשלום,,85,99,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_72.txt
 ,רבקה,אבשלום,,30,44,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_73.txt
-13.11.1913,רבקה,,יפו,282,350,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_74.txt
-24.2.1914,רבקה,אבשלום,יפו,102,126,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_75.txt
+13.11.1913,רבקה,,יפו,287,357,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_74.txt
+24.2.1914,רבקה,אבשלום,יפו,103,127,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_75.txt
 ,רבקה,אבשלום,,19,26,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_76.txt
-9.4.1914,שרה,אבשלום,קאקוּן,77,100,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_77.txt
-20.5.1914,רבקה,אבשלום,יפו,647,825,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_78.txt
-9.6.1914,רבקה,,חדרה,173,223,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_79.txt
-,רבקה,,חדרה,34,42,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_8.txt
-10.6.1914,רבקה,אבשלום,חדרה,439,548,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_80.txt
-28.6.1914,רבקה,אבשלום,חדרה,132,165,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_81.txt
-9 נובמבר 1914,רבקה,אבשלום,יפו,321,390,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_82.txt
-,רבקה,אבשלום,,91,116,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_83.txt
+9.4.1914,רבקה,אבשלום,קאקוּן,81,105,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_77.txt
+20.5.1914,רבקה,אבשלום,יפו,670,860,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_78.txt
+9.6.1914,רבקה,,חדרה,174,224,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_79.txt
+,רבקה,,חדרה,33,43,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_8.txt
+10.6.1914,רבקה,אבשלום,חדרה,453,565,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_80.txt
+28.6.1914,רבקה,אבשלום,חדרה,142,175,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_81.txt
+9 נובמבר 1914,רבקה,אבשלום,יפו,322,396,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_82.txt
+,רבקה,אבשלום,,91,119,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_83.txt
 ,רבקה,אבשלום,,6,6,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_84.txt
-26.9.1915,רבקה,אבשלום,אלכסנדריה,498,646,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_85.txt
-26.9.1915,רבקה,אבשלום,אלכסנדריה,96,126,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_86.txt
-22.10.1915,רבקה,אבשלום,יפו,2106,2746,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_87.txt
-4 יוני 1911,רבקה,אבשלום,חדרה,122,146,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_9.txt
-27 לפברואר 1911,שרה,אבשלום,חדרה,196,243,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_sara/letter_1.txt
-9.6.12,שרה,אבשלום,,74,91,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_sara/letter_10.txt
-29.4.1913,שרה,אבשלום,,97,130,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_sara/letter_11.txt
-6.6.1913,שרה,אבשלום,חדרה,96,131,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_sara/letter_12.txt
-3.10.1913,שרה,אבשלום,,76,94,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_sara/letter_13.txt
-17.6.1914,שרה,אבשלום,חיפה,624,782,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_sara/letter_14.txt
-21.9.1914,שרה,,יפו,160,193,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_sara/letter_15.txt
-29.1.1916,שרה,אבשלום,יפו,241,299,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_sara/letter_16.txt
-9.5.16,שרה,אבשלום,,116,148,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_sara/letter_17.txt
-16.12.1916,שרה,אבשלום,יפו,187,242,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_sara/letter_18.txt
-7.1.17,שרה,אבשלום,חדרה,499,639,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_sara/letter_19.txt
-7 יוני 1911,שרה,אבשלום,חדרה,377,457,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_sara/letter_2.txt
-1 יוני 1911,שרה,אבשלום,חדרה,145,192,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_sara/letter_3.txt
-3 Juillet 1911,שרה,אבשלום,GRAND HOTEL D'ORIENT,123,150,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_sara/letter_4.txt
-7.8.11,שרה,אבשלום,חדרה,79,99,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_sara/letter_5.txt
-22.12.1911,שרה,סַלים,,64,85,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_sara/letter_6.txt
-14.3.1912,שרה,אבשלום,יפו,199,256,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_sara/letter_7.txt
-16.3.1912,שרה,אבשלום,יפו,137,191,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_sara/letter_8.txt
+26.9.1915,רבקה,אבשלום,אלכסנדריה,509,658,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_85.txt
+26.9.1915,רבקה,אבשלום,אלכסנדריה,99,130,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_86.txt
+22.10.1915,רבקה,אבשלום,חדרה,3008,3789,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_87.txt
+4 יוני 1911,רבקה,אבשלום,חדרה,123,148,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_9.txt
+,שרה,אבשלום,,180,226,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_sara/letter_1.txt
+9.6.12,שרה,אבשלום,,76,93,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_sara/letter_10.txt
+29.4.1913,שרה,אבשלום,,98,132,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_sara/letter_11.txt
+6.6.1913,שרה,אבשלום,חדרה,99,134,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_sara/letter_12.txt
+3.10.1913,שרה,אבשלום,,77,95,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_sara/letter_13.txt
+17.6.1914,רבקה,אבשלום,חיפה,632,793,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_sara/letter_14.txt
+21.9.1914,רבקה,,יפו,169,203,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_sara/letter_15.txt
+29.1.1916,רבקה,אבשלום,יפו,241,302,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_sara/letter_16.txt
+9.5.16,רבקה,אבשלום,,116,148,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_sara/letter_17.txt
+16.12.1916,שרה,אבשלום,יפו,189,249,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_sara/letter_18.txt
+7.1.17,רבקה,אבשלום,חדרה,801,1002,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_sara/letter_19.txt
+7 יוני 1911,שרה,אבשלום,חדרה,387,472,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_sara/letter_2.txt
+1 יוני 1911,שרה,אבשלום,חדרה,147,196,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_sara/letter_3.txt
+3 Juillet 1911,רבקה,אבשלום,GRAND HOTEL D'ORIENT,122,149,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_sara/letter_4.txt
+7.8.11,שרה,אבשלום,חדרה,80,103,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_sara/letter_5.txt
+22.12.1911,שרה,סַלים,,62,85,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_sara/letter_6.txt
+14.3.1912,רבקה,אבשלום,יפו,202,260,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_sara/letter_7.txt
+16.3.1912,שרה,אבשלום,יפו,142,198,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_sara/letter_8.txt
 21.3.1912,שרה,אבשלום,יפו,83,106,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_sara/letter_9.txt
