@@ -28,5 +28,7 @@ def main():
     p = Parser()
     p.parseFolder(input_dir_path, output_dir_path)
     create_csv(output_dir_path)
+    words = p.parseTaggerOutput("inbalor.tagged.ner.txt")
+    p.writeTaggerData(WordProsessor().countWords(words), output_dir_path)
 
 main()

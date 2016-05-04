@@ -1,4 +1,5 @@
 Date,adressee,From,Location,Number of words,Number of words(with stop words),filename
+,,,,0,0,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/taggerWordCount.txt
 ,רבקה,,יפו,339,409,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_1.txt
 11 יוני 1911,רבקה,אבשלום,חדרה,72,85,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_10.txt
 17 יוני 1911,רבקה,אבשלום,חדרה,722,908,/Users/novakgena/OneDrive/Documents/BGU/H/Digital/Ass1/out/letters_to_rivka/letter_11.txt

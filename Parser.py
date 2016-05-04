@@ -42,11 +42,11 @@ class Parser:
                     pattern = pattern_beforeyear + year
                     repl = '\n * * * \n {0}'.format(year)
                     text = re.sub(pattern, repl, text)
-                
+
                 boarder_str = 'לתוכן הענינים'
-                sidx = text.find(boarder_str)                          
+                sidx = text.find(boarder_str)
                 sidx_plus = text.find(boarder_str) + len(boarder_str)  #sidx_plus = start of the text
-                eidx = text.find(boarder_str,sidx_plus)                #eidx = end of the text     
+                eidx = text.find(boarder_str,sidx_plus)                #eidx = end of the text
                 if (sidx == -1):
                         print("could not trim start")
                         sidx_plus = 0
@@ -60,7 +60,7 @@ class Parser:
                 text = re.sub(",", " , ", text)
                 text = re.sub("-", " - ",text)
                 text = self.removeEmptyLine(text)
-                
+
                 return text[sidx_plus:(eidx-1)]
 
         def writeLetter(self, path, letter, count):
@@ -71,7 +71,16 @@ class Parser:
                 print("    write to {0}".format(fname))
                 return count+1
 
-        def spliteInLetter(self, out_dir_path, text, val, lcount, pcount):    
+        def writeTaggerData(self, dic, path):
+            fname = 'taggerWordCount.txt'
+            out_file_path = os.path.join(path, fname)
+            with open(out_file_path, 'w') as out_file:
+                keys = dic.keys()
+                for key in keys:
+                    out_file.write(key + " : " + str(dic[key]) + "\n")
+
+
+        def spliteInLetter(self, out_dir_path, text, val, lcount, pcount):
                 if (isinstance(val, str)):
                         repl = '\n * * * \n {0}'.format(val)
                         text = re.sub(val, repl, text)
@@ -79,13 +88,13 @@ class Parser:
                         for v in val:
                                 repl = '\n * * * \n {0}'.format(v)
                                 text = re.sub(v, repl, text)
-                letters = text.split('* * *')   
+                letters = text.split('* * *')
                 for letter in letters:
                         pcount = self.writeLetter(out_dir_path,letter,pcount)
                 return pcount
 
         def parseFolder(self, in_dir_path, out_dir_path):
-            
+
                 if (not (os.path.exists(in_dir_path))):
                         print('Input folder doesn''t exist')
                         return
@@ -98,7 +107,7 @@ class Parser:
                         with open(in_abs_path, 'rb') as input_file:
                                 all_text = input_file.read().decode()
                         all_text = self.cleanLetterText(all_text)
-                        
+
                         out_path = os.path.join(out_dir_path, os.path.splitext(file)[0])
                         out_abs_path = self.getAbsPath(out_path)
                         #create out dir if it doesn't exist
@@ -109,7 +118,7 @@ class Parser:
 
 
                         # ------ Split into letters ----------
-                        
+
                         print(os.path.basename(out_abs_path))
                         all_letters = all_text.split('* * *')
                         letter_count = 1;
@@ -122,3 +131,14 @@ class Parser:
                                         print_count = self.writeLetter(out_abs_path, letter, print_count)
                                 letter_count = letter_count + 1
                 os.chdir("..")
+
+        def parseTaggerOutput(self, filePath):
+            taggedWords = []
+            with open(filePath, encoding='utf-8') as file:
+                text = file.read()
+                lines = text.splitlines()
+                for line in lines:
+                    words = line.split()
+                    if(len(words) > 1):
+                        taggedWords.append(words[2])
+                return taggedWords

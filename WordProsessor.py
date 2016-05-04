@@ -282,3 +282,13 @@ class WordProsessor:
 			if mark in inputString:
 				return True
 		return False
+
+	#retun a directory with "word" as a key and its count in the words arr as value
+	def countWords(self, words):
+		dic = dict()
+		for word in words:
+			if word in dic:
+				dic[word] += 1
+			else:
+				dic[word] = 1
+		return dic
