@@ -96,6 +96,10 @@ class Letter:
 				if line in "3 juillet 1911":
 					return "רבקה"
 			index +=1
+		if("rivka"  in self.m_letterPath):
+			return "רבקה"
+		if("sara" in self.m_letterPath):
+			return "שרה"
 		return ""
 
 	#find from who the letter is. the algorithem assumes that the last line with only one word contains the name

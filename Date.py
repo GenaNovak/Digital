@@ -33,6 +33,15 @@ class Date:
 			try:
 				date = datetime.strptime(word, "%B").strftime("%B")
 				if(index > 0):
+					day = words[index - 1]
+					year = words[index + 1]
+					if (WordProsessor.hasNumbers(day)):
+						date = day + " " + word
+					if(WordProsessor.hasNumbers(year)):
+						date = date + " " + year
+					else:
+						date = date + " 2011"
+					return date
 					return words[index - 1] + " " + word + " " + words[index + 1]
 			except ValueError:
 				print("",end="")
