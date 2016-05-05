@@ -237,7 +237,14 @@ class WordProsessor:
 	def isStopWord(self, word):
 		return word in self.m_stopWords
 
-
+	def wordForTagger(self, text):
+		text = re.sub(r'<.*?>' ,'', text)
+		text = re.sub(r'\* \* \*' ,'', text)
+		tokens = nltk.word_tokenize(text)
+		tokens = list(filter(lambda a : a not in self.m_punctuationMarks, tokens))
+		tokens = list(filter(lambda a: a not in self.m_stopWords, tokens))
+		return tokens
+        
 	#return number of word with or without stopwords
 	def getNumberOfWords(self, filePath, withStopWords):
 		with open(filePath ,encoding='utf-8') as file:

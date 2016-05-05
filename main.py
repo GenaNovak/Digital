@@ -7,12 +7,9 @@ import fnmatch
 import os
 
 
-def create_csv(dir_path):
+def createCsv(dir_path):
     letters = []
     prosessor = WordProsessor()
-    '''for file in glob.glob("out/*.txt"):
-    	letters.append(Letter(prosessor.getText(file), file))
-    '''
     for root, dirnames, filenames in os.walk('./out'):
         for filename in fnmatch.filter(filenames, '*.txt'):
             file = os.path.abspath(os.path.join(root, filename))
@@ -21,14 +18,18 @@ def create_csv(dir_path):
     x = CSVHandler("out/test.csv", ["Date", "adressee", "From", "Location", "Number of words", "Number of words(with stop words)", "filename"])
     x.writeLines(letters)
 
+def parseTaggerOutput(lettersNames):
+    for name in lettersNames:
+        words = p.parseTaggerOutput(name)
+        lname = names.split("_")[0]
+        p.writeTaggerData(WordProsessor().countWords(words), ".", lname)
 
 def main():
     input_dir_path = "input"
     output_dir_path = "out"
     p = Parser()
     p.parseFolder(input_dir_path, output_dir_path)
-    create_csv(output_dir_path)
-    words = p.parseTaggerOutput("inbalor.tagged.ner.txt")
-    p.writeTaggerData(WordProsessor().countWords(words), output_dir_path)
+    createCsv(output_dir_path)
+    parseTaggerOutput(["rivka_letters.tagged.ner.txt","sara_letters.tagged.ner.txt"])
 
 main()
