@@ -15,14 +15,14 @@ def createCsv(dir_path):
             file = os.path.abspath(os.path.join(root, filename))
             letters.append(Letter(prosessor.getText(file),file))
 
-    x = CSVHandler("out/output.csv", ["Date", "adressee", "From", "Location", "Number of words", "Number of words(with stop words)", "filename"])
+    x = CSVHandler("out/output.csv", ["Date", "adressee", "From", "Location", "Number of words(without stop words)", "Number of words", "filename"])
     x.writeLines(letters)
 
 def parseTaggerOutput(lettersNames, p):
     for name in lettersNames:
         words = p.parseTaggerOutput(name)
         lname = name.split("_")[0]
-        p.writeTaggerData(WordProsessor().countWords(words), "./out", lname)
+        p.writeTaggerData(WordProsessor().countWords(words), ".", lname)
 
 def main():
     input_dir_path = "input"
