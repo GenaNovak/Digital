@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import os, glob, re
+from WordProsessor import WordProsessor
 
 class Parser:
         def __init__(self):
@@ -54,6 +55,7 @@ class Parser:
                         print("could not trim end")
                         eidx = len(text)
 
+                text = text[sidx_plus:(eidx-1)]
                 # clean special marks
                 text = re.sub(r'<.*?>' ,'', text)
                 text = re.sub(r'\[[0-9].*?\]', '', text)
@@ -61,7 +63,7 @@ class Parser:
                 text = re.sub("-", " - ",text)
                 text = self.removeEmptyLine(text)
                 
-                return text[sidx_plus:(eidx-1)]
+                return text
 
         def writeLetter(self, path, letter, count):
                 fname = 'letter_{0}.txt'.format(count)
@@ -84,12 +86,24 @@ class Parser:
                         pcount = self.writeLetter(out_dir_path,letter,pcount)
                 return pcount
 
+        def taggerFile(self, text, tmp):
+                # clean special marks
+                wp = WordProsessor()
+                words_lst = wp.wordForTagger(text)
+                all_text = " ".join(words_lst)
+                
+                fname = 'kkk_{0}.txt'.format(tmp)
+                ofp = os.path.join("../out", fname)
+                with open(ofp, 'wb') as out_file:
+                        out_file.write(all_text.encode())
+                print("     *** write to {0}".format(fname))
+                return tmp + 1
+
         def parseFolder(self, in_dir_path, out_dir_path):
-            
                 if (not (os.path.exists(in_dir_path))):
                         print('Input folder doesn''t exist')
                         return
-
+                tmp = 1
                 #read all files in input directory
                 os.chdir(in_dir_path)
                 for file in glob.glob("*.txt"):
@@ -105,11 +119,9 @@ class Parser:
                         os.makedirs(out_abs_path, exist_ok=True)
 
                         # ------ Parse with tagger -----------
-
-
-
-                        # ------ Split into letters ----------
+                        tmp = self.taggerFile(all_text,tmp)
                         
+                        # ------ Split into letters ----------
                         print(os.path.basename(out_abs_path))
                         all_letters = all_text.split('* * *')
                         letter_count = 1;

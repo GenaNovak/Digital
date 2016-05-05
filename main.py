@@ -27,6 +27,6 @@ def main():
     output_dir_path = "out"
     p = Parser()
     p.parseFolder(input_dir_path, output_dir_path)
-    create_csv(output_dir_path)
+    #create_csv(output_dir_path)
 
 main()
