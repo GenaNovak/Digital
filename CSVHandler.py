@@ -17,16 +17,3 @@ class CSVHandler:
 			for letter in letters:
 				row = {"Date" : letter.m_date.m_dateStr, "adressee" : letter.m_to, "From" : letter.m_from, "Location" : letter.m_location, "Number of words" : letter.m_numberOfWords, "Number of words(with stop words)" : letter.m_numberOfWordsWithoutStopWords, "filename" : letter.m_letterPath}
 				writer.writerow(row)
-
-
-
-'''
-with open("test.csv", 'w') as csvFile:
-	fieldnames = ['first_name', 'last_name']
-	writer = csv.DictWriter(csvFile, fieldnames=fieldnames)
-
-	writer.writeheader()
-	writer.writerow({'first_name': 'Baked', 'last_name': 'Beans'})
-	writer.writerow({'first_name': 'Lovely', 'last_name': 'Spam'})
-	writer.writerow({'first_name': 'Wonderful', 'last_name': 'Spam'})
-	'''

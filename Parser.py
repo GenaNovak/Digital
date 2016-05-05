@@ -128,7 +128,7 @@ class Parser:
                         os.makedirs(out_abs_path, exist_ok=True)
 
                         # ------ Parse with tagger -----------
-                        tmp = self.taggerFile(all_text,tmp)
+                        #tmp = self.taggerFile(all_text,tmp)
 
                         # ------ Split into letters ----------
                         print(os.path.basename(out_abs_path))
@@ -151,6 +151,6 @@ class Parser:
                 lines = text.splitlines()
                 for line in lines:
                     words = line.split()
-                    if(len(words) > 1):
+                    if(len(words) > 1 and words[2] != "###NUMEXP###" and words[2] != "###NUMBER###"):
                         taggedWords.append(words[2])
                 return taggedWords
