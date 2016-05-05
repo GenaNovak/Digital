@@ -18,7 +18,7 @@ def create_csv(dir_path):
             file = os.path.abspath(os.path.join(root, filename))
             letters.append(Letter(prosessor.getText(file),file))
 
-    x = CSVHandler("test.csv", ["Date", "adressee", "From", "Location", "Number of words", "Number of words(with stop words)", "filename"])
+    x = CSVHandler("out/test.csv", ["Date", "adressee", "From", "Location", "Number of words", "Number of words(with stop words)", "filename"])
     x.writeLines(letters)
 
 
